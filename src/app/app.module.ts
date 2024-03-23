@@ -12,9 +12,9 @@ import {CustomHttpInterceptor} from '../auth/auth.intercept'
 export function MSALInstanceFactory(): IPublicClientApplication {
   return new PublicClientApplication({
     auth: {
-      clientId: '8639ec81-b47f-4696-84ee-aeda335c3e28',
+      clientId: '',
       authority:
-            "https://login.microsoftonline.com/516e848d-1ae9-4414-b36c-65260ec80967",
+            "https://login.microsoftonline.com/tenantid",
       redirectUri: 'https://localhost:4200'
     },
     cache: {

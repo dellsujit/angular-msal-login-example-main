@@ -52,6 +52,7 @@ export class RestrictedPageComponent implements OnInit {
     this.http.get(GRAPH_ENDPOINT)
       .subscribe(profile => {
         this.profile = profile;
+        console.log(this.profile);
       });
       
   }
